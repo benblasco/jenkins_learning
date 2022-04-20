@@ -4,17 +4,20 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Ben is Building...'
+                sh 'uname -a'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'Ben is Testing...'
+                sh 'uptime'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'Ben is Deploying...'
+                sh 'whoami'
             }
         }
     }
