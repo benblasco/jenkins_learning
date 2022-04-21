@@ -12,6 +12,7 @@ pipeline {
             steps {
                 echo 'Ben is Testing...'
                 sh 'uptime'
+                sh 'timedatectl'
             }
         }
         stage('Deploy') {
